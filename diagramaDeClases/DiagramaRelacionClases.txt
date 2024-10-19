@@ -1,0 +1,78 @@
+@startuml ModeloUML
+
+class Usuario{
+    # int dni;
+    # String nombres;
+    # String apellidos;
+    # String genero;
+    # String telefono;
+    # String email;
+}
+
+class Alumno{
+    - String numeroMatricula;
+    - String semestre;
+    - Grupo grupos;
+}
+
+class Profesor{
+    - String departamentoAcademico;
+    - String cargo;
+    - Date fechaInicioContrato;
+    - Date fechaFinContrato;
+    - List<Asignatura> asignatura;
+}
+
+class Grupo{
+    - String nombre;
+    - List<Alumno> alumnos;
+    - List<Asignatura> asignaturas;
+}
+
+class Asignatura{
+    - String codigo;
+    - String nombre;
+    - String descripcion;
+    - int creditosAcademicos;
+    - int añoAcademico;
+    - String semestre;
+    - String horarioClases;
+    - Evaluacion evaluaciones;
+    - Grupo grupos;
+    - Alumno alumnos;
+    - List<Profesor> profesores;
+}
+
+class Evaluacion{
+    # String id;
+    # String nombre;
+    # String descripcion;
+    # int numeroPreguntas;
+    # String tipo;
+    # Date fecha;
+    # List<Asignatura> asignaturas;
+}
+
+class AlumnosDestacados{
+    - float notasAltas;
+}
+
+
+Usuario <|-- Alumno
+Usuario <|-- Profesor
+
+Asignatura "*"---"1" Evaluacion : Se aplica a
+
+Profesor "*"--"*" Asignatura : Enseñar
+Profesor "1"--"*" Grupo : Estar
+
+Alumno "*"--"1" Grupo : pertenecer
+
+Grupo "1"--"*" Asignatura : Ver
+
+Alumno "1"--"*" Asignatura : Ver
+
+Alumno "*"--"1" AlumnosDestacados : Pertenece
+
+
+@enduml
