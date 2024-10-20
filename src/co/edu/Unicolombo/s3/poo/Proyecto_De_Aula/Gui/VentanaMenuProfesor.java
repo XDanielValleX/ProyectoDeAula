@@ -4,14 +4,14 @@
  */
 package co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui;
 
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.MenusProfesor.PanelEditarEstudiante;
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.MenusProfesor.PanelAsignaturas;
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.MenusProfesor.PanelEstudiantes;
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.MenusProfesor.PanelInfoProfesor;
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.MenusProfesor.PanelNotasyAsistencia;
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.MenusProfesor.PanelPrincipal;
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.MenusProfesor.PanelReportes;
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.MenusProfesor.PanelReportesEstudiantes;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusProfesor.PanelEditarEstudiante;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusProfesor.PanelAsignaturas;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusProfesor.PanelEstudiantes;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusProfesor.PanelInfoProfesor;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusProfesor.PanelNotasyAsistencia;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusProfesor.PanelPrincipal;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusProfesor.PanelReportes;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusProfesor.PanelReportesEstudiantes;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.util.Date;
@@ -422,7 +422,7 @@ public class VentanaMenuProfesor extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/iconos/equipo.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/vistas/iconos/equipo.png"))); // NOI18N
         jLabel2.setText("  Menu Gestion");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 220, 70));
 

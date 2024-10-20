@@ -6,7 +6,7 @@ package co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.crud;
 
 import java.util.List;
 
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Domain.AlumnosDestacados;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Domain.Model.AlumnosDestacados;
 import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.crud.main.ICrudModel;
 
 /**

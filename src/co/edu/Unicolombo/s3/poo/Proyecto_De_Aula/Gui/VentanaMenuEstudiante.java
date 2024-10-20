@@ -4,11 +4,11 @@
  */
 package co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui;
 
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.MenusEstudiante.PanelConsultarNotas;
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.MenusEstudiante.PanelInfoEstudiante;
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.MenusEstudiante.PanelPlanEstudio;
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.MenusEstudiante.PanelPrincipal;
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.MenusProfesor.PanelReportes;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusEstudiante.PanelConsultarNotas;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusEstudiante.PanelInfoEstudiante;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusEstudiante.PanelPlanEstudio;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusEstudiante.PanelPrincipal;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusProfesor.PanelReportes;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.util.Date;
@@ -327,7 +327,7 @@ public class VentanaMenuEstudiante extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Gill Sans Ultra Bold", 0, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/clb/ude/pb/Proyecto_De_Aula/vistas/iconos/informacionUs.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/vistas/iconos/informacionUs.png"))); // NOI18N
         jLabel2.setText("Menu Estudiante");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 220, 70));
 

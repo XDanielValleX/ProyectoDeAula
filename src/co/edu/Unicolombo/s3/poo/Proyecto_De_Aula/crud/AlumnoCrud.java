@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Domain.Alumno;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Domain.Model.Alumno;
 import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.crud.main.ICrudModel;
 
 /**

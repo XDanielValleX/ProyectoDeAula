@@ -3,8 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui;
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.LogIncomponentes.LogInEstudiante;
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.LogIncomponentes.LogInProfesor;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.LogIncomponentes.LogInEstudiante;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.LogIncomponentes.LogInProfesor;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import javax.swing.JLabel;
@@ -174,7 +174,7 @@ public class VentanaPrincipalLogIn extends javax.swing.JFrame {
         bg.add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 590, 410));
 
         icono.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        icono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/iconos/usuarios.png"))); // NOI18N
+        icono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/vistas/iconos/usuarios.png"))); // NOI18N
         bg.add(icono, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 50, 310, 140));
 
         estudiante.setBackground(new java.awt.Color(1, 174, 250));
@@ -245,7 +245,7 @@ public class VentanaPrincipalLogIn extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/iconos/usuario3.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/vistas/iconos/usuario3.png"))); // NOI18N
         jLabel3.setText("Plataforma Estudiantil");
         bg.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 140, 40));
 

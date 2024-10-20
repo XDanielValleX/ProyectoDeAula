@@ -203,7 +203,7 @@
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/iconos/usuarios.png"/>
+              <Image iconType="3" name="/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/vistas/iconos/usuarios.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -360,7 +360,7 @@
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/iconos/usuario3.png"/>
+              <Image iconType="3" name="/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/vistas/iconos/usuario3.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Plataforma Estudiantil"/>
           </Properties>

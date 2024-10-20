@@ -4,8 +4,8 @@
  */
 package co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui;
 
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.SignUpcomponentes.SignUpEstudiante;
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.SignUpcomponentes.SignUpProfesor;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.SignUpcomponentes.SignUpEstudiante;
+import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.SignUpcomponentes.SignUpProfesor;
 import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.VentanaPrincipalLogIn;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -175,7 +175,7 @@ public class VentanaPrincipalSignUp extends javax.swing.JFrame {
         bg.add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 590, 410));
 
         icono.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        icono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/iconos/agregar-usuario.png"))); // NOI18N
+        icono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/vistas/iconos/agregar-usuario.png"))); // NOI18N
         bg.add(icono, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 50, 310, 140));
 
         estudiante.setBackground(new java.awt.Color(1, 174, 250));
@@ -246,7 +246,7 @@ public class VentanaPrincipalSignUp extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/iconos/usuario3.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/vistas/iconos/usuario3.png"))); // NOI18N
         jLabel3.setText("Plataforma Estudiantil");
         bg.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 140, 40));
 
