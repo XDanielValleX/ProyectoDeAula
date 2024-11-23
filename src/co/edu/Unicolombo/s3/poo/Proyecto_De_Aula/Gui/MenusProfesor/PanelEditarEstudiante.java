@@ -4,7 +4,6 @@
  */
 package co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusProfesor;
 
-
 import com.toedter.calendar.JDateChooser;
 import com.toedter.calendar.JTextFieldDateEditor;
 import java.awt.Color;
@@ -38,6 +37,8 @@ public class PanelEditarEstudiante extends javax.swing.JPanel {
         configurarDateChooser();
 
         CodigoEstTxt.setEnabled(false);
+        
+        
     }
 
     /**
@@ -399,7 +400,7 @@ public class PanelEditarEstudiante extends javax.swing.JPanel {
         });
         jPanel1.add(text_buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 370, 180, 30));
 
-        button_buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/clb/ude/pb/Proyecto_De_Aula/vistas/iconos/vaso (2).png"))); // NOI18N
+        button_buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/vistas/iconos/vaso (2).png"))); // NOI18N
         button_buscar.setBorder(null);
         button_buscar.setBorderPainted(false);
         button_buscar.setContentAreaFilled(false);
@@ -429,8 +430,8 @@ public class PanelEditarEstudiante extends javax.swing.JPanel {
 
         botonNuevoTxt.setFont(new java.awt.Font("Eras Bold ITC", 0, 14)); // NOI18N
         botonNuevoTxt.setForeground(new java.awt.Color(255, 255, 255));
-        botonNuevoTxt.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        botonNuevoTxt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/clb/ude/pb/Proyecto_De_Aula/vistas/iconos/boton-agregar.png"))); // NOI18N
+        botonNuevoTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        botonNuevoTxt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/vistas/iconos/boton-agregar.png"))); // NOI18N
         botonNuevoTxt.setText("Nuevo");
         botonNuevoTxt.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
         botonNuevoTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -507,10 +508,14 @@ public class PanelEditarEstudiante extends javax.swing.JPanel {
 
     private void ModificarTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ModificarTxtMouseClicked
         if (validarEntrada()) {
-            actualizarInformacionEstudiante();
+            actualizarInformacionEstudiante();  // Método para actualizar datos del estudiante
+            if (listener != null) {
+                listener.onEstudianteModificado("- Se ha modificado un estudiante" + "\n");  // Llamada al listener
+            }
         } else {
             JOptionPane.showMessageDialog(this, "Debe llenar todos los campos de información correctamente", "Error", JOptionPane.ERROR_MESSAGE);
         }
+
     }//GEN-LAST:event_ModificarTxtMouseClicked
 
     private void ModificarTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ModificarTxtMouseEntered
@@ -623,9 +628,12 @@ public class PanelEditarEstudiante extends javax.swing.JPanel {
         }
 
         if (!insertarEstudianteEnBD()) {
-            // javax.swing.JOptionPane.showMessageDialog(jPanel1, "No se pudo registrar el estudiante en la base de datos", "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(jPanel1, "No se pudo registrar el estudiante en la base de datos", "Error", JOptionPane.ERROR_MESSAGE);
         } else {
-            javax.swing.JOptionPane.showMessageDialog(jPanel1, "Registrado Correctamente");
+            JOptionPane.showMessageDialog(jPanel1, "- Se ha agregado un estudiante" + "\n");
+            if (listener != null) {
+                listener.onEstudianteModificado("¡Estudiante agregado correctamente!");  // Llamada al listener
+            }
         }
     }//GEN-LAST:event_botonNuevoTxtMouseClicked
 
@@ -636,6 +644,17 @@ public class PanelEditarEstudiante extends javax.swing.JPanel {
     private void botonNuevoTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonNuevoTxtMouseExited
         botonNuevo.setBackground(new Color(1, 174, 250));
     }//GEN-LAST:event_botonNuevoTxtMouseExited
+
+    private EstudianteModificadoListener listener;
+
+    public interface EstudianteModificadoListener {
+        void onEstudianteModificado(String mensaje);
+    }
+
+    public void setEstudianteModificadoListener(EstudianteModificadoListener listener) {
+        this.listener = listener;
+    }
+    
 
     private void configurarDateChooser() {
         jDateChooserEst.setDateFormatString("d/MM/yyyy");
@@ -912,7 +931,7 @@ public class PanelEditarEstudiante extends javax.swing.JPanel {
                 // El código del estudiante no debe ser editable
                 CodigoEstTxt.setText(rs.getString("Codigo_Estudiante"));
                 CodigoEstTxt.setEditable(false);
-                
+
             } else {
                 javax.swing.JOptionPane.showMessageDialog(jPanel1, "Estudiante no registrado", "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
 
@@ -955,7 +974,7 @@ public class PanelEditarEstudiante extends javax.swing.JPanel {
             } else {
                 // Maneja el caso en el que el item seleccionado es null
             }
-            
+
             pst.setString(11, text_buscar.getText().trim());
 
             pst.executeUpdate();
@@ -965,9 +984,8 @@ public class PanelEditarEstudiante extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(this, "Error al actualizar la información", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
-    
+
     //Metodo para agregar nuevo estudiante en bd
-    
     private void mostrarCodigoEstudiante(ResultSet rs) throws SQLException {
         if (rs.next()) {
             int codigoEstudiante = rs.getInt(1);
@@ -1047,7 +1065,7 @@ public class PanelEditarEstudiante extends javax.swing.JPanel {
             pst.setString(7, genero);
 
             pst.setString(8, "Estudiante");
-            
+
             pst.setString(9, TelefonoEstTxt.getText().trim());
 
             pst.setString(10, jComboBoxSemestre.getSelectedItem().toString());

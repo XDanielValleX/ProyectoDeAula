@@ -11,7 +11,6 @@ import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusProfesor.PanelInfoProf
 import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusProfesor.PanelNotasyAsistencia;
 import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusProfesor.PanelPrincipal;
 import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusProfesor.PanelReportes;
-import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.Gui.MenusProfesor.PanelReportesEstudiantes;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.util.Date;
@@ -64,8 +63,6 @@ public class VentanaMenuProfesor extends javax.swing.JFrame {
         reportesTxt = new javax.swing.JLabel();
         Informacion = new javax.swing.JPanel();
         informacionTxt = new javax.swing.JLabel();
-        ReportesEstudiante = new javax.swing.JPanel();
-        reportesEstudianteTxt = new javax.swing.JLabel();
         ModificarEstudiantes = new javax.swing.JPanel();
         modificarEstudiantesTxt = new javax.swing.JLabel();
         ListaEstudiantes = new javax.swing.JPanel();
@@ -269,42 +266,6 @@ public class VentanaMenuProfesor extends javax.swing.JFrame {
         );
 
         jPanel2.add(Informacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 240, 50));
-
-        ReportesEstudiante.setBackground(new java.awt.Color(19, 117, 255));
-
-        reportesEstudianteTxt.setFont(new java.awt.Font("Eras Bold ITC", 0, 14)); // NOI18N
-        reportesEstudianteTxt.setForeground(new java.awt.Color(255, 255, 255));
-        reportesEstudianteTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        reportesEstudianteTxt.setText("Reportes de Estudiante");
-        reportesEstudianteTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        reportesEstudianteTxt.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                reportesEstudianteTxtMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                reportesEstudianteTxtMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                reportesEstudianteTxtMouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout ReportesEstudianteLayout = new javax.swing.GroupLayout(ReportesEstudiante);
-        ReportesEstudiante.setLayout(ReportesEstudianteLayout);
-        ReportesEstudianteLayout.setHorizontalGroup(
-            ReportesEstudianteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ReportesEstudianteLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(reportesEstudianteTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        ReportesEstudianteLayout.setVerticalGroup(
-            ReportesEstudianteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ReportesEstudianteLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(reportesEstudianteTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        jPanel2.add(ReportesEstudiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 240, 50));
 
         ModificarEstudiantes.setBackground(new java.awt.Color(19, 117, 255));
 
@@ -655,25 +616,6 @@ public class VentanaMenuProfesor extends javax.swing.JFrame {
         Reportes.setBackground(new Color(19, 117, 245));
     }//GEN-LAST:event_reportesTxtMouseExited
 
-    private void reportesEstudianteTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_reportesEstudianteTxtMouseClicked
-        PanelReportesEstudiantes panelReportesEstudiantes = new PanelReportesEstudiantes();
-        panelReportesEstudiantes.setSize(660, 420);
-        panelReportesEstudiantes.setLocation(0, 0);
-        
-        content.removeAll();
-        content.add(panelReportesEstudiantes, BorderLayout.CENTER);
-        content.revalidate();
-        content.repaint();
-    }//GEN-LAST:event_reportesEstudianteTxtMouseClicked
-
-    private void reportesEstudianteTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_reportesEstudianteTxtMouseEntered
-        ReportesEstudiante.setBackground(new Color(14, 144, 255));
-    }//GEN-LAST:event_reportesEstudianteTxtMouseEntered
-
-    private void reportesEstudianteTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_reportesEstudianteTxtMouseExited
-        ReportesEstudiante.setBackground(new Color(19, 117, 245));
-    }//GEN-LAST:event_reportesEstudianteTxtMouseExited
-
     private void AccionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AccionMouseClicked
         System.exit(0);
     }//GEN-LAST:event_AccionMouseClicked
@@ -786,7 +728,6 @@ public class VentanaMenuProfesor extends javax.swing.JFrame {
     private javax.swing.JPanel Pp;
     private javax.swing.JPanel Principal;
     private javax.swing.JPanel Reportes;
-    private javax.swing.JPanel ReportesEstudiante;
     private javax.swing.JLabel asignaturaTxt;
     private javax.swing.JPanel content;
     private javax.swing.JLabel fechaActual;
@@ -802,7 +743,6 @@ public class VentanaMenuProfesor extends javax.swing.JFrame {
     private javax.swing.JLabel modificarEstudiantesTxt;
     private javax.swing.JLabel notasTxt;
     private javax.swing.JLabel principalTxt;
-    private javax.swing.JLabel reportesEstudianteTxt;
     private javax.swing.JLabel reportesTxt;
     // End of variables declaration//GEN-END:variables
 }

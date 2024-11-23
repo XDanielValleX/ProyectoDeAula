@@ -479,6 +479,8 @@ public class PanelInfoProfesor extends javax.swing.JPanel {
 
     }//GEN-LAST:event_ModificarBotonMouseExited
 
+    
+    
     private void configurarDateChooser() {
         jDateChooserPo.setDateFormatString("d/MM/yyyy");
         jDateChooserPo.getDateEditor().setEnabled(false);

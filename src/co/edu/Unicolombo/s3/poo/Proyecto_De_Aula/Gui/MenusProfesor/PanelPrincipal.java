@@ -184,7 +184,7 @@ public class PanelPrincipal extends javax.swing.JPanel {
 
         jPanelimagen.setBackground(new java.awt.Color(0, 0, 0, 0));
 
-        jLabelimagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/clb/ude/pb/Proyecto_De_Aula/vistas/imagenes/imgCarpetas.png.png"))); // NOI18N
+        jLabelimagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/vistas/imagenes/imgCarpetas.png.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanelimagenLayout = new javax.swing.GroupLayout(jPanelimagen);
         jPanelimagen.setLayout(jPanelimagenLayout);

@@ -264,44 +264,6 @@ public class VentanaPrincipalLogIn extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void profesorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_profesorActionPerformed
-        LogInProfesor profesor = new LogInProfesor();
-        profesor.setSize(590, 410);
-        profesor.setLocation(0, 0);
-        
-        content.removeAll();
-        content.add(profesor, BorderLayout.CENTER);
-        content.revalidate();
-        content.repaint();
-    }//GEN-LAST:event_profesorActionPerformed
-
-    private void estudianteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estudianteActionPerformed
-        LogInEstudiante estudiante = new LogInEstudiante();
-        estudiante.setSize(590, 410);
-        estudiante.setLocation(0, 0);
-        
-        content.removeAll();
-        content.add(estudiante, BorderLayout.CENTER);
-        content.revalidate();
-        content.repaint();
-    }//GEN-LAST:event_estudianteActionPerformed
-
-    private void estudianteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_estudianteMouseEntered
-        estudiante.setBackground(new Color(1, 105, 150));
-    }//GEN-LAST:event_estudianteMouseEntered
-
-    private void estudianteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_estudianteMouseExited
-        estudiante.setBackground(new Color(1, 174, 250));
-    }//GEN-LAST:event_estudianteMouseExited
-
-    private void profesorMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_profesorMouseEntered
-        profesor.setBackground(new Color(1, 105, 150));
-    }//GEN-LAST:event_profesorMouseEntered
-
-    private void profesorMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_profesorMouseExited
-        profesor.setBackground(new Color(1, 174, 250));
-    }//GEN-LAST:event_profesorMouseExited
-
     private void AccionMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AccionMouseEntered
         Accion.setBackground(new Color(1, 105, 150));
     }//GEN-LAST:event_AccionMouseEntered
@@ -339,6 +301,44 @@ public class VentanaPrincipalLogIn extends javax.swing.JFrame {
     private void registrarseTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_registrarseTxtMouseExited
         RegistrarseBoton.setBackground(new Color(1, 174, 250));
     }//GEN-LAST:event_registrarseTxtMouseExited
+
+    private void profesorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_profesorActionPerformed
+        LogInProfesor profesor = new LogInProfesor();
+        profesor.setSize(590, 410);
+        profesor.setLocation(0, 0);
+
+        content.removeAll();
+        content.add(profesor, BorderLayout.CENTER);
+        content.revalidate();
+        content.repaint();
+    }//GEN-LAST:event_profesorActionPerformed
+
+    private void profesorMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_profesorMouseExited
+        profesor.setBackground(new Color(1, 174, 250));
+    }//GEN-LAST:event_profesorMouseExited
+
+    private void profesorMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_profesorMouseEntered
+        profesor.setBackground(new Color(1, 105, 150));
+    }//GEN-LAST:event_profesorMouseEntered
+
+    private void estudianteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estudianteActionPerformed
+        LogInEstudiante estudiante = new LogInEstudiante();
+        estudiante.setSize(590, 410);
+        estudiante.setLocation(0, 0);
+
+        content.removeAll();
+        content.add(estudiante, BorderLayout.CENTER);
+        content.revalidate();
+        content.repaint();
+    }//GEN-LAST:event_estudianteActionPerformed
+
+    private void estudianteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_estudianteMouseExited
+        estudiante.setBackground(new Color(1, 174, 250));
+    }//GEN-LAST:event_estudianteMouseExited
+
+    private void estudianteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_estudianteMouseEntered
+        estudiante.setBackground(new Color(1, 105, 150));
+    }//GEN-LAST:event_estudianteMouseEntered
                           
 
     /**

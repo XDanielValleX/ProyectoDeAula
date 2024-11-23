@@ -100,7 +100,7 @@ public class PanelEstudiantes extends javax.swing.JPanel {
         });
         jPanel1.add(text_buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 380, 180, 30));
 
-        button_buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/clb/ude/pb/Proyecto_De_Aula/vistas/iconos/vaso (2).png"))); // NOI18N
+        button_buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/vistas/iconos/vaso (2).png"))); // NOI18N
         button_buscar.setBorder(null);
         button_buscar.setBorderPainted(false);
         button_buscar.setContentAreaFilled(false);
@@ -128,7 +128,7 @@ public class PanelEstudiantes extends javax.swing.JPanel {
         botonEliminarTxt.setFont(new java.awt.Font("Eras Bold ITC", 0, 14)); // NOI18N
         botonEliminarTxt.setForeground(new java.awt.Color(255, 255, 255));
         botonEliminarTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        botonEliminarTxt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/clb/ude/pb/Proyecto_De_Aula/vistas/iconos/borrar_23.png"))); // NOI18N
+        botonEliminarTxt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/vistas/iconos/borrar_23.png"))); // NOI18N
         botonEliminarTxt.setText("Eliminar");
         botonEliminarTxt.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
         botonEliminarTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -249,7 +249,7 @@ public class PanelEstudiantes extends javax.swing.JPanel {
                     rs.getString("Codigo_Estudiante"),
                     rs.getString("Nombre"),
                     rs.getString("Apellidos"),
-                    rs.getString("Fecha de Nacimiento"),
+                    rs.getString("Nacimiento"),
                     rs.getString("Email"),
                     rs.getString("Genero"),
                     rs.getString("Identificacion"),

@@ -290,11 +290,11 @@ public class LogInProfesor extends javax.swing.JPanel {
             }
         });
 
-        TextosPredeterminado(IDTxt, "Ingrese su codigo estudiante");
+        TextosPredeterminado(IDTxt, "Ingrese su numero de ID");
         TextosPredeterminado(correoTxt, "Ingrese su correo");
         TextosPredeterminado(contraseñaTxt, "•••••••••••••••");
 
-        agregarFocusListener(IDTxt, "Ingrese su codigo estudiante");
+        agregarFocusListener(IDTxt, "Ingrese su numero de ID");
         agregarFocusListener(correoTxt, "Ingrese su correo");
         agregarFocusListener(contraseñaTxt, "•••••••••••••••");
 
@@ -326,14 +326,14 @@ public class LogInProfesor extends javax.swing.JPanel {
     }
 
     private void limpiarCampos() {
-        TextosPredeterminado(IDTxt, "Ingrese su codigo estudiante");
+        TextosPredeterminado(IDTxt, "Ingrese su numero de ID");
         TextosPredeterminado(correoTxt, "Ingrese su correo");
         TextosPredeterminado(contraseñaTxt, "•••••••••••••••");
     }
 
     private void restaurarTextoPredeterminado() {
         if (IDTxt.getText().isEmpty()) {
-            TextosPredeterminado(IDTxt, "Ingrese su codigo estudiante");
+            TextosPredeterminado(IDTxt, "Ingrese su numero de ID");
         }
         if (correoTxt.getText().isEmpty()) {
             TextosPredeterminado(correoTxt, "Ingrese su correo");
@@ -357,7 +357,7 @@ public class LogInProfesor extends javax.swing.JPanel {
     private boolean validarEntrada() {
         // Verificar que todos los campos estén llenos
         if (IDTxt.getText().isEmpty()
-                || IDTxt.getText().equals("Ingrese su codigo estudiante")
+                || IDTxt.getText().equals("Ingrese su numero de ID")
                 || correoTxt.getText().isEmpty()
                 || correoTxt.getText().equals("Ingrese su correo")
                 || String.valueOf(contraseñaTxt.getPassword()).isEmpty()
