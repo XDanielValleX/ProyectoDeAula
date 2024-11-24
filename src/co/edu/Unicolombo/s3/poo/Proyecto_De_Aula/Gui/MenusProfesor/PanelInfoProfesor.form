@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="botonesGenero">
+    </Component>
+  </NonVisualComponents>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,-92,0,0,2,-108"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+    <Property name="useNullLayout" type="boolean" value="false"/>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="0" y="0" width="660" height="420"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="false"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabelNombre">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI Semibold" size="12" style="0"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Nombre(s)"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="10" width="130" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="nombrePoTxt">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Ingrese su(s) Nombre(s)"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="null"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="nombrePoTxtMousePressed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nombrePoTxtActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="40" width="170" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator1">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="80" width="170" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="correoPoTxt">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Ingrese su correo"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="null"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="correoPoTxtMousePressed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="correoPoTxtActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="120" width="170" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator2">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="160" width="170" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelCorrreo">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI Semibold" size="12" style="0"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Correo"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="80" width="100" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator3">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="247" width="170" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelContrase&#xf1;a">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI Semibold" size="12" style="0"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Nueva Contrase&#xf1;a"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="170" width="100" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JPasswordField" name="nuevaContrase&#xf1;aPoTxt">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="jPasswordField1"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="null"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="nuevaContrase&#xf1;aPoTxtMousePressed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nuevaContrase&#xf1;aPoTxtActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="210" width="170" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelApellido">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI Semibold" size="12" style="0"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Apellido(s)"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="250" y="10" width="130" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="apellidoPoTxt">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Ingrese su(s) Apellido(s)"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="null"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="apellidoPoTxtMousePressed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="apellidoPoTxtActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="250" y="40" width="170" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelGenero">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI Semibold" size="12" style="0"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Genero"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="440" y="90" width="130" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator5">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="250" y="340" width="170" height="10"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator6">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="340" width="170" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelConfirmarContrase&#xf1;a">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI Semibold" size="12" style="0"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Confirmar Contrase&#xf1;a"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="260" width="120" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JPasswordField" name="confirmarContrase&#xf1;aPoTxt">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="jPasswordField1"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="null"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="confirmarContrase&#xf1;aPoTxtMousePressed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="confirmarContrase&#xf1;aPoTxtActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="300" width="170" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelID">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI Semibold" size="12" style="0"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="ID"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="440" y="170" width="130" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="IDPoTxt">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Numero de Identificacion"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="null"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="IDPoTxtMousePressed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IDPoTxtActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="440" y="210" width="170" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator7">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="440" y="250" width="170" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="gMujer">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Mujer"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gMujerActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="530" y="120" width="80" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="gHombre">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Hombre"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gHombreActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="440" y="120" width="80" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelFechaNacimiento">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI Semibold" size="12" style="0"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Fecha de nacimiento"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="250" y="260" width="130" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator8">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="250" y="80" width="170" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator9">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="440" y="160" width="170" height="10"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="jDateChooserPo">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="250" y="300" width="170" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelTelefono">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI Semibold" size="12" style="0"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Telefono"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="250" y="170" width="130" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="TelefonoPoTxt">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Ingrese se numero de Telefono"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="null"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="TelefonoPoTxtMousePressed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TelefonoPoTxtActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="250" y="210" width="170" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator10">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="250" y="250" width="170" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelCargo">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI Semibold" size="12" style="0"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Cargo"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="250" y="90" width="130" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator12">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="250" y="160" width="170" height="10"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelAsignatura">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI Semibold" size="12" style="0"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Asignatura"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="440" y="10" width="130" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator13">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="440" y="80" width="170" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="jComboBoxAsignatura">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="130">
+                <StringItem index="0" value="Matem&#xe1;ticas B&#xe1;sicas"/>
+                <StringItem index="1" value="C&#xe1;lculo Diferencial"/>
+                <StringItem index="2" value="C&#xe1;lculo Integral"/>
+                <StringItem index="3" value="&#xc1;lgebra Lineal"/>
+                <StringItem index="4" value="Estad&#xed;stica"/>
+                <StringItem index="5" value="F&#xed;sica Mec&#xe1;nica"/>
+                <StringItem index="6" value="F&#xed;sica El&#xe9;ctrica"/>
+                <StringItem index="7" value="Qu&#xed;mica General"/>
+                <StringItem index="8" value="Biolog&#xed;a General"/>
+                <StringItem index="9" value="Introducci&#xf3;n a la Programaci&#xf3;n"/>
+                <StringItem index="10" value="Programaci&#xf3;n Orientada a Objetos"/>
+                <StringItem index="11" value="Estructuras de Datos"/>
+                <StringItem index="12" value="Bases de Datos"/>
+                <StringItem index="13" value="Sistemas Operativos"/>
+                <StringItem index="14" value="Redes de Computadores"/>
+                <StringItem index="15" value="Inteligencia Artificial"/>
+                <StringItem index="16" value="M&#xe9;todos Num&#xe9;ricos"/>
+                <StringItem index="17" value="Econom&#xed;a"/>
+                <StringItem index="18" value="Contabilidad General"/>
+                <StringItem index="19" value="Finanzas"/>
+                <StringItem index="20" value="Marketing"/>
+                <StringItem index="21" value="Gesti&#xf3;n de Proyectos"/>
+                <StringItem index="22" value="&#xc9;tica Profesional"/>
+                <StringItem index="23" value="Derecho Empresarial"/>
+                <StringItem index="24" value="Psicolog&#xed;a General"/>
+                <StringItem index="25" value="Sociolog&#xed;a"/>
+                <StringItem index="26" value="Historia de Colombia"/>
+                <StringItem index="27" value="Literatura"/>
+                <StringItem index="28" value="Filosof&#xed;a"/>
+                <StringItem index="29" value="Ingl&#xe9;s T&#xe9;cnico"/>
+                <StringItem index="30" value="Espa&#xf1;ol y Comunicaci&#xf3;n"/>
+                <StringItem index="31" value="Dise&#xf1;o Gr&#xe1;fico"/>
+                <StringItem index="32" value="Arquitectura de Software"/>
+                <StringItem index="33" value="Ingenier&#xed;a de Software"/>
+                <StringItem index="34" value="Electr&#xf3;nica B&#xe1;sica"/>
+                <StringItem index="35" value="Electromagnetismo"/>
+                <StringItem index="36" value="Termodin&#xe1;mica"/>
+                <StringItem index="37" value="Din&#xe1;mica de Fluidos"/>
+                <StringItem index="38" value="Ciencias de los Materiales"/>
+                <StringItem index="39" value="Bioqu&#xed;mica"/>
+                <StringItem index="40" value="Gen&#xe9;tica"/>
+                <StringItem index="41" value="Microbiolog&#xed;a"/>
+                <StringItem index="42" value="Anatom&#xed;a Humana"/>
+                <StringItem index="43" value="Fisiolog&#xed;a"/>
+                <StringItem index="44" value="Salud P&#xfa;blica"/>
+                <StringItem index="45" value="Enfermer&#xed;a B&#xe1;sica"/>
+                <StringItem index="46" value="Medicina Interna"/>
+                <StringItem index="47" value="Cirug&#xed;a General"/>
+                <StringItem index="48" value="Pediatr&#xed;a"/>
+                <StringItem index="49" value="Ginecolog&#xed;a y Obstetricia"/>
+                <StringItem index="50" value="F&#xed;sica Moderna"/>
+                <StringItem index="51" value="Qu&#xed;mica Org&#xe1;nica"/>
+                <StringItem index="52" value="Biolog&#xed;a Molecular"/>
+                <StringItem index="53" value="Ecolog&#xed;a"/>
+                <StringItem index="54" value="Zoolog&#xed;a"/>
+                <StringItem index="55" value="Bot&#xe1;nica"/>
+                <StringItem index="56" value="Antropolog&#xed;a"/>
+                <StringItem index="57" value="Historia del Arte"/>
+                <StringItem index="58" value="Teor&#xed;a de la Comunicaci&#xf3;n"/>
+                <StringItem index="59" value="Periodismo"/>
+                <StringItem index="60" value="Publicidad"/>
+                <StringItem index="61" value="Relaciones P&#xfa;blicas"/>
+                <StringItem index="62" value="Dise&#xf1;o de Interiores"/>
+                <StringItem index="63" value="Urbanismo"/>
+                <StringItem index="64" value="Derecho Constitucional"/>
+                <StringItem index="65" value="Derecho Penal"/>
+                <StringItem index="66" value="Derecho Civil"/>
+                <StringItem index="67" value="Derecho Internacional"/>
+                <StringItem index="68" value="Derecho Laboral"/>
+                <StringItem index="69" value="Psicolog&#xed;a del Desarrollo"/>
+                <StringItem index="70" value="Psicolog&#xed;a Cl&#xed;nica"/>
+                <StringItem index="71" value="Psicolog&#xed;a Educativa"/>
+                <StringItem index="72" value="Psicolog&#xed;a Organizacional"/>
+                <StringItem index="73" value="Nutrici&#xf3;n"/>
+                <StringItem index="74" value="Farmacolog&#xed;a"/>
+                <StringItem index="75" value="Medicina Preventiva"/>
+                <StringItem index="76" value="Odontolog&#xed;a General"/>
+                <StringItem index="77" value="Ortodoncia"/>
+                <StringItem index="78" value="Ingenier&#xed;a Civil"/>
+                <StringItem index="79" value="Ingenier&#xed;a El&#xe9;ctrica"/>
+                <StringItem index="80" value="Ingenier&#xed;a Mec&#xe1;nica"/>
+                <StringItem index="81" value="Ingenier&#xed;a Electr&#xf3;nica"/>
+                <StringItem index="82" value="Ingenier&#xed;a de Telecomunicaciones"/>
+                <StringItem index="83" value="Ingenier&#xed;a Qu&#xed;mica"/>
+                <StringItem index="84" value="Ingenier&#xed;a Industrial"/>
+                <StringItem index="85" value="Ingenier&#xed;a Ambiental"/>
+                <StringItem index="86" value="Agronom&#xed;a"/>
+                <StringItem index="87" value="Zootecnia"/>
+                <StringItem index="88" value="Ciencias Pol&#xed;ticas"/>
+                <StringItem index="89" value="Relaciones Internacionales"/>
+                <StringItem index="90" value="Administraci&#xf3;n de Empresas"/>
+                <StringItem index="91" value="Administraci&#xf3;n P&#xfa;blica"/>
+                <StringItem index="92" value="Turismo"/>
+                <StringItem index="93" value="Gastronom&#xed;a"/>
+                <StringItem index="94" value="Hoteler&#xed;a"/>
+                <StringItem index="95" value="Educaci&#xf3;n Infantil"/>
+                <StringItem index="96" value="Pedagog&#xed;a"/>
+                <StringItem index="97" value="M&#xfa;sica"/>
+                <StringItem index="98" value="Artes Esc&#xe9;nicas"/>
+                <StringItem index="99" value="Cine y Televisi&#xf3;n"/>
+                <StringItem index="100" value="Fotograf&#xed;a"/>
+                <StringItem index="101" value="Danza"/>
+                <StringItem index="102" value="Historia Universal"/>
+                <StringItem index="103" value="Geograf&#xed;a"/>
+                <StringItem index="104" value="Filosof&#xed;a de la Ciencia"/>
+                <StringItem index="105" value="&#xc9;tica Profesional"/>
+                <StringItem index="106" value="L&#xf3;gica"/>
+                <StringItem index="107" value="Epistemolog&#xed;a"/>
+                <StringItem index="108" value="Teolog&#xed;a"/>
+                <StringItem index="109" value="Investigaci&#xf3;n de Operaciones"/>
+                <StringItem index="110" value="Ciencia de Materiales"/>
+                <StringItem index="111" value="Bioinform&#xe1;tica"/>
+                <StringItem index="112" value="Rob&#xf3;tica"/>
+                <StringItem index="113" value="Seguridad Inform&#xe1;tica"/>
+                <StringItem index="114" value="Criptograf&#xed;a"/>
+                <StringItem index="115" value="Desarrollo Web"/>
+                <StringItem index="116" value="Desarrollo de Aplicaciones M&#xf3;viles"/>
+                <StringItem index="117" value="Big Data"/>
+                <StringItem index="118" value="Ciencia de Datos"/>
+                <StringItem index="119" value="Machine Learning"/>
+                <StringItem index="120" value="Miner&#xed;a de Datos"/>
+                <StringItem index="121" value="An&#xe1;lisis de Algoritmos"/>
+                <StringItem index="122" value="Compiladores"/>
+                <StringItem index="123" value="Redes Neuronales"/>
+                <StringItem index="124" value="Sistemas Embebidos"/>
+                <StringItem index="125" value="Realidad Virtual"/>
+                <StringItem index="126" value="Blockchain"/>
+                <StringItem index="127" value="Cloud Computing"/>
+                <StringItem index="128" value="DevOps"/>
+                <StringItem index="129" value="Gesti&#xf3;n de la Innovaci&#xf3;n"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="440" y="40" width="180" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Container class="javax.swing.JPanel" name="ModificarBoton">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="fa" green="ae" red="1" type="rgb"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ModificarBotonMouseEntered"/>
+            <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ModificarBotonMouseExited"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="370" width="-1" height="-1"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="ModificarTxt" min="-2" pref="99" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="ModificarTxt" min="-2" pref="33" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="ModificarTxt">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Eras Bold ITC" size="14" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="Modificar"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder>
+                      <Color PropertyName="color" blue="99" green="99" red="99" type="rgb"/>
+                    </LineBorder>
+                  </Border>
+                </Property>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Hand Cursor"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ModificarTxtMouseClicked"/>
+                <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ModificarTxtMouseEntered"/>
+                <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ModificarTxtMouseExited"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JComboBox" name="jComboBoxCargo">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="119">
+                <StringItem index="0" value="Profesor de Ingenier&#xed;a"/>
+                <StringItem index="1" value="Profesor de Matem&#xe1;ticas"/>
+                <StringItem index="2" value="Profesor de F&#xed;sica"/>
+                <StringItem index="3" value="Profesor de Qu&#xed;mica"/>
+                <StringItem index="4" value="Profesor de Biolog&#xed;a"/>
+                <StringItem index="5" value="Profesor de Lenguas"/>
+                <StringItem index="6" value="Profesor de C&#xe1;lculo"/>
+                <StringItem index="7" value="Profesor de &#xc1;lgebra"/>
+                <StringItem index="8" value="Profesor de Estad&#xed;stica"/>
+                <StringItem index="9" value="Profesor de Programaci&#xf3;n"/>
+                <StringItem index="10" value="Profesor de Bases de Datos"/>
+                <StringItem index="11" value="Profesor de Redes de Computadores"/>
+                <StringItem index="12" value="Profesor de Inteligencia Artificial"/>
+                <StringItem index="13" value="Profesor de Econom&#xed;a"/>
+                <StringItem index="14" value="Profesor de Contabilidad"/>
+                <StringItem index="15" value="Profesor de Finanzas"/>
+                <StringItem index="16" value="Profesor de Marketing"/>
+                <StringItem index="17" value="Profesor de Gesti&#xf3;n de Proyectos"/>
+                <StringItem index="18" value="Profesor de &#xc9;tica"/>
+                <StringItem index="19" value="Profesor de Derecho"/>
+                <StringItem index="20" value="Profesor de Psicolog&#xed;a"/>
+                <StringItem index="21" value="Profesor de Sociolog&#xed;a"/>
+                <StringItem index="22" value="Profesor de Historia"/>
+                <StringItem index="23" value="Profesor de Literatura"/>
+                <StringItem index="24" value="Profesor de Filosof&#xed;a"/>
+                <StringItem index="25" value="Profesor de Ingl&#xe9;s"/>
+                <StringItem index="26" value="Profesor de Espa&#xf1;ol"/>
+                <StringItem index="27" value="Profesor de Dise&#xf1;o Gr&#xe1;fico"/>
+                <StringItem index="28" value="Profesor de Arquitectura de Software"/>
+                <StringItem index="29" value="Profesor de Electr&#xf3;nica"/>
+                <StringItem index="30" value="Profesor de Electromagnetismo"/>
+                <StringItem index="31" value="Profesor de Termodin&#xe1;mica"/>
+                <StringItem index="32" value="Profesor de Ciencias de los Materiales"/>
+                <StringItem index="33" value="Profesor de Gen&#xe9;tica"/>
+                <StringItem index="34" value="Profesor de Microbiolog&#xed;a"/>
+                <StringItem index="35" value="Profesor de Anatom&#xed;a"/>
+                <StringItem index="36" value="Profesor de Fisiolog&#xed;a"/>
+                <StringItem index="37" value="Profesor de Salud P&#xfa;blica"/>
+                <StringItem index="38" value="Profesor de Medicina Interna"/>
+                <StringItem index="39" value="Profesor de Cirug&#xed;a"/>
+                <StringItem index="40" value="Profesor de Pediatr&#xed;a"/>
+                <StringItem index="41" value="Profesor de Ginecolog&#xed;a y Obstetricia"/>
+                <StringItem index="42" value="Profesor de Bioqu&#xed;mica"/>
+                <StringItem index="43" value="Profesor de Ecolog&#xed;a"/>
+                <StringItem index="44" value="Profesor de Zoolog&#xed;a"/>
+                <StringItem index="45" value="Profesor de Bot&#xe1;nica"/>
+                <StringItem index="46" value="Profesor de Antropolog&#xed;a"/>
+                <StringItem index="47" value="Profesor de Historia del Arte"/>
+                <StringItem index="48" value="Profesor de Comunicaci&#xf3;n"/>
+                <StringItem index="49" value="Profesor de Periodismo"/>
+                <StringItem index="50" value="Profesor de Publicidad"/>
+                <StringItem index="51" value="Profesor de Relaciones P&#xfa;blicas"/>
+                <StringItem index="52" value="Profesor de Dise&#xf1;o de Interiores"/>
+                <StringItem index="53" value="Profesor de Urbanismo"/>
+                <StringItem index="54" value="Profesor de Derecho Constitucional"/>
+                <StringItem index="55" value="Profesor de Derecho Penal"/>
+                <StringItem index="56" value="Profesor de Derecho Civil"/>
+                <StringItem index="57" value="Profesor de Derecho Internacional"/>
+                <StringItem index="58" value="Profesor de Derecho Laboral"/>
+                <StringItem index="59" value="Profesor de Psicolog&#xed;a del Desarrollo"/>
+                <StringItem index="60" value="Profesor de Psicolog&#xed;a Cl&#xed;nica"/>
+                <StringItem index="61" value="Profesor de Psicolog&#xed;a Educativa"/>
+                <StringItem index="62" value="Profesor de Psicolog&#xed;a Organizacional"/>
+                <StringItem index="63" value="Profesor de Nutrici&#xf3;n"/>
+                <StringItem index="64" value="Profesor de Farmacolog&#xed;a"/>
+                <StringItem index="65" value="Profesor de Medicina Preventiva"/>
+                <StringItem index="66" value="Profesor de Odontolog&#xed;a"/>
+                <StringItem index="67" value="Profesor de Ortodoncia"/>
+                <StringItem index="68" value="Profesor de Ingenier&#xed;a Civil"/>
+                <StringItem index="69" value="Profesor de Ingenier&#xed;a El&#xe9;ctrica"/>
+                <StringItem index="70" value="Profesor de Ingenier&#xed;a Mec&#xe1;nica"/>
+                <StringItem index="71" value="Profesor de Ingenier&#xed;a Electr&#xf3;nica"/>
+                <StringItem index="72" value="Profesor de Ingenier&#xed;a de Telecomunicaciones"/>
+                <StringItem index="73" value="Profesor de Ingenier&#xed;a Qu&#xed;mica"/>
+                <StringItem index="74" value="Profesor de Ingenier&#xed;a Industrial"/>
+                <StringItem index="75" value="Profesor de Ingenier&#xed;a Ambiental"/>
+                <StringItem index="76" value="Profesor de Agronom&#xed;a"/>
+                <StringItem index="77" value="Profesor de Zootecnia"/>
+                <StringItem index="78" value="Profesor de Ciencias Pol&#xed;ticas"/>
+                <StringItem index="79" value="Profesor de Relaciones Internacionales"/>
+                <StringItem index="80" value="Profesor de Administraci&#xf3;n de Empresas"/>
+                <StringItem index="81" value="Profesor de Administraci&#xf3;n P&#xfa;blica"/>
+                <StringItem index="82" value="Profesor de Turismo"/>
+                <StringItem index="83" value="Profesor de Gastronom&#xed;a"/>
+                <StringItem index="84" value="Profesor de Hoteler&#xed;a"/>
+                <StringItem index="85" value="Profesor de Educaci&#xf3;n Infantil"/>
+                <StringItem index="86" value="Profesor de Pedagog&#xed;a"/>
+                <StringItem index="87" value="Profesor de M&#xfa;sica"/>
+                <StringItem index="88" value="Profesor de Artes Esc&#xe9;nicas"/>
+                <StringItem index="89" value="Profesor de Cine y Televisi&#xf3;n"/>
+                <StringItem index="90" value="Profesor de Fotograf&#xed;a"/>
+                <StringItem index="91" value="Profesor de Danza"/>
+                <StringItem index="92" value="Profesor de Historia Universal"/>
+                <StringItem index="93" value="Profesor de Geograf&#xed;a"/>
+                <StringItem index="94" value="Profesor de Filosof&#xed;a de la Ciencia"/>
+                <StringItem index="95" value="Profesor de L&#xf3;gica"/>
+                <StringItem index="96" value="Profesor de Epistemolog&#xed;a"/>
+                <StringItem index="97" value="Profesor de Teolog&#xed;a"/>
+                <StringItem index="98" value="Profesor de Investigaci&#xf3;n de Operaciones"/>
+                <StringItem index="99" value="Profesor de Ciencia de Materiales"/>
+                <StringItem index="100" value="Profesor de Bioinform&#xe1;tica"/>
+                <StringItem index="101" value="Profesor de Rob&#xf3;tica"/>
+                <StringItem index="102" value="Profesor de Seguridad Inform&#xe1;tica"/>
+                <StringItem index="103" value="Profesor de Criptograf&#xed;a"/>
+                <StringItem index="104" value="Profesor de Desarrollo Web"/>
+                <StringItem index="105" value="Profesor de Desarrollo de Aplicaciones M&#xf3;viles"/>
+                <StringItem index="106" value="Profesor de Big Data"/>
+                <StringItem index="107" value="Profesor de Ciencia de Datos"/>
+                <StringItem index="108" value="Profesor de Machine Learning"/>
+                <StringItem index="109" value="Profesor de Miner&#xed;a de Datos"/>
+                <StringItem index="110" value="Profesor de An&#xe1;lisis de Algoritmos"/>
+                <StringItem index="111" value="Profesor de Compiladores"/>
+                <StringItem index="112" value="Profesor de Redes Neuronales"/>
+                <StringItem index="113" value="Profesor de Sistemas Embebidos"/>
+                <StringItem index="114" value="Profesor de Realidad Virtual"/>
+                <StringItem index="115" value="Profesor de Blockchain"/>
+                <StringItem index="116" value="Profesor de Cloud Computing"/>
+                <StringItem index="117" value="Profesor de DevOps"/>
+                <StringItem index="118" value="Profesor de Gesti&#xf3;n de la Innovaci&#xf3;n"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="250" y="120" width="170" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
