@@ -3,11 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/daniel/OneDrive/Escritorio/ProyectoDeAula/src/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/Gui/MenusProfesor/PanelInfoProfesor.java</file>
-            <file>file:/C:/Users/daniel/OneDrive/Escritorio/ProyectoDeAula/src/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/Gui/MenusProfesor/PanelEditarEstudiante.java</file>
-            <file>file:/C:/Users/daniel/OneDrive/Escritorio/ProyectoDeAula/src/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/Gui/MenusEstudiante/PanelReportes.java</file>
-            <file>file:/C:/Users/daniel/OneDrive/Escritorio/ProyectoDeAula/src/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/Gui/LogIncomponentes/LogInProfesor.java</file>
-            <file>file:/C:/Users/daniel/OneDrive/Escritorio/ProyectoDeAula/src/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/Gui/MenusProfesor/PanelReportes.java</file>
+            <file>file:/C:/Users/asus/Documents/samuel%20Diaz/proaula/ProyectoDeAula/src/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/crud/AlumnoCrud.java</file>
+            <file>file:/C:/Users/asus/Documents/samuel%20Diaz/proaula/ProyectoDeAula/src/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/crud/AbstractCrud.java</file>
+            <file>file:/C:/Users/asus/Documents/samuel%20Diaz/proaula/ProyectoDeAula/src/co/edu/Unicolombo/s3/poo/Proyecto_De_Aula/crud/ProfesorCrud.java</file>
         </group>
     </open-files>
 </project-private>

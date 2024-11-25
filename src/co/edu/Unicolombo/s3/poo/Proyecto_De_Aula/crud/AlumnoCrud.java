@@ -15,112 +15,63 @@ import co.edu.Unicolombo.s3.poo.Proyecto_De_Aula.crud.main.ICrudModel;
  *
  * @author daniel
  */
-public class AlumnoCrud implements ICrudModel<Alumno> {
-
-    private HashMap<String, Alumno> bdAlumno;
+public class AlumnoCrud extends AbstractCrud implements ICrudModel<Alumno> {
 
     @Override
-    public void agregar(Alumno objeto) throws Exception {
-        try{
-            if(bdAlumno.containsKey(objeto.getCodigoEstudiante())){
-                throw new UnsupportedOperationException("// No se encontro el Alumno //");
-            }
-            bdAlumno.put(objeto.getCodigoEstudiante(), objeto);
-        } catch (Exception e){
-            System.out.println(e.getMessage());
-        }
+    protected String getTabla() {
+        return "alumnos";
+    }
+    
+    @Override
+    protected String[] getColumnas() {
+        return new String[]{"codigo_estudiante", "nombres", "apellidos", "email"};
+    }
+    
+    protected Object[] getValues(Alumno alumno) {
+        return new Object[]{
+            alumno.getCodigoEstudiante(),
+            alumno.getNombres(),
+            alumno.getApellidos(),
+            alumno.getEmail()
+        };
+    }
+    
+    @Override
+    protected Alumno mapResultSetToEntity(ResultSet rs) throws SQLException {
+        Alumno alumno = new Alumno();
+        alumno.setCodigoEstudiante(rs.getString("codigo_estudiante"));
+        alumno.setNombres(rs.getString("nombres"));
+        alumno.setApellidos(rs.getString("apellidos"));
+        alumno.setEmail(rs.getString("email"));
+        return alumno;
+    }
+    
+    protected String getIdentificador(Alumno alumno) {
+        return alumno.getCodigoEstudiante();
     }
 
     @Override
-    public Alumno buscar(String numeroMatricula) throws Exception{
-        try {
-            if(!bdAlumno.containsKey(numeroMatricula)){
-                throw new UnsupportedOperationException("// No existe //");
-            }
-            return bdAlumno.get(numeroMatricula);
-            
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-        return null;
+    protected Object[] getValues(Object objeto) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    protected String getIdentificador(Object objeto) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void agregar(Alumno objeto) throws Exception {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public Alumno buscar(String texto) throws Exception {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
     public void editar(Alumno objeto) throws Exception {
-        try {
-            if(!bdAlumno.containsKey(objeto.getCodigoEstudiante())){
-                throw new Exception("// El Alumno no esta registrado //");
-            }
-            bdAlumno.put(objeto.getCodigoEstudiante(), objeto);
-
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-    }
-
-
-    @Override
-    public void eliminar(String numeroMatricula) throws Exception {
-        
-        try {
-            if(!bdAlumno.containsKey(numeroMatricula)){
-                throw new Exception("// El Alumno no existe //");
-            }
-            
-            bdAlumno.remove(numeroMatricula);
-            
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-        
-    }
-
-
-
-    @Override
-    public List<Alumno> listarTodo() throws Exception {
-        List<Alumno> alumnos = new ArrayList<>();
-        
-        try {
-            
-            if(bdAlumno.isEmpty()){
-                
-            throw new Exception("// No hay elementos //");
-                
-            }
-            for(Map.Entry<String, Alumno> indentificacion : bdAlumno.entrySet()){
-            
-            //String obligatorio = indentificacion.getKey();
-            Alumno alumno = indentificacion.getValue();
-            
-            alumnos.add(alumno);
-            }
-            return alumnos;
-        
-        } catch (Exception e){
-            
-            System.out.println(e.getMessage());
-        }
-        return null;
-    }
-
-
-    @Override
-    public int contar() throws Exception {
-        List<Alumno> numeroAlumnos = listarTodo();
-        
-        int NumeroAlumnos = 0;
-        
-        try {
-            NumeroAlumnos = numeroAlumnos.size();
-                if(NumeroAlumnos == 0){
-            
-            throw new Exception("// No hay elementos //");
-            }
-                return NumeroAlumnos;
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-        return 0;
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
